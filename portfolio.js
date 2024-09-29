@@ -43,25 +43,26 @@ scrollToTopButton.addEventListener('click', scrollToTop);
 
 
 // Scroll to Next Section Logic
-const scrollButton = document.getElementById('scroll-button');
-const nextSection = document.getElementById('second-section');
+document.addEventListener('DOMContentLoaded', function () {
+    const scrollButton = document.getElementById('scroll-button');
+    const nextSection = document.getElementById('second-section');
 
+    // Function to scroll to the next section
+    function scrollToNextSection() {
+        if (nextSection) {
+            const sectionPosition = nextSection.getBoundingClientRect().top + window.scrollY;
+            const offset = document.querySelector('.fixed-navbar').offsetHeight; //Fixed menu height
 
-// Function to scroll to the next section
-function scrollToNextSection() {
-    if (nextSection) {
-        const sectionPosition = nextSection.getBoundingClientRect().top + window.scrollY;
-        const offset = document.querySelector('.fixed-navbar').offsetHeight; //Fixed menu height
-
-        // Scroll to the next section with the correction
-        window.scrollTo({
-            top: sectionPosition - offset,
-            behavior: 'smooth'
-        });
+            // Scroll to the next section with the correction
+            window.scrollTo({
+                top: sectionPosition - offset,
+                behavior: 'smooth'
+            });
+        }
     }
-}
-// Add click event listener to the scroll button
-scrollButton.addEventListener('click', scrollToNextSection);
+    // Add click event listener to the scroll button
+    scrollButton.addEventListener('click', scrollToNextSection);
+});
 
 
 // Function to navigate to the main page 
