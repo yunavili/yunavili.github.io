@@ -64,7 +64,6 @@ function scrollToNextSection() {
 scrollButton.addEventListener('click', scrollToNextSection);
 
 
-
 // Function to navigate to the main page 
 function goToMain() {
     window.location.href = 'index.html'; // Redirects to the index.html page
