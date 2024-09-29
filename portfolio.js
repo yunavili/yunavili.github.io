@@ -83,26 +83,26 @@ function goToWorks() {
 // Variable to keep track of the currently active gallery (null means no gallery is active initially)
 var activeGallery = null;
 
+ = 'works.html';
+}
 
-// Function to toggle galleries
-function toggleGallery(index) {
-    // Get the gallery element by index
-    const gallery = document.getElementById(`gallery-${index}`);
+var activeGallery = null;
+document.getElementById(`gallery-${index}`);
 
-    // If there is an active gallery and it is not the current one
-    if (activeGallery && activeGallery !== gallery) {
-        // Remove the 'active' class from the previous active gallery
-        activeGallery.classList.remove('active');
-    }
+// If there is an active gallery and it is not the current one
+if (activeGallery && activeGallery !== gallery) {
+    // Remove the 'active' class from the previous active gallery
+    activeGallery.classList.remove('active');
+}
 
-    // Toggle the 'active' class for the current gallery
-    if (gallery.classList.contains('active')) {
-        gallery.classList.remove('active');
-        activeGallery = null; // Reset the active gallery
-    } else {
-        gallery.classList.add('active');
-        activeGallery = gallery; // Set the new active gallery
-    }
+// Toggle the 'active' class for the current gallery
+if (gallery.classList.contains('active')) {
+    gallery.classList.remove('active');
+    activeGallery = null; // Reset the active gallery
+} else {
+    gallery.classList.add('active');
+    activeGallery = gallery; // Set the new active gallery
+}
 }
 
 
