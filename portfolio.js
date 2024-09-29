@@ -1,6 +1,23 @@
 const toggleButton = document.querySelector('.burger-menu');
 const nav = document.querySelector('#nav-list');
 
+// Function to scroll to the next section
+function scrollToNextSection() {
+    if (nextSection) {
+        const sectionPosition = nextSection.getBoundingClientRect().top + window.scrollY;
+        const offset = document.querySelector('.fixed-navbar').offsetHeight; // Fixed menu height
+
+        // Scroll to the next section with the correction
+        window.scrollTo({
+            top: sectionPosition - offset,
+            behavior: 'smooth'
+        });
+    }
+}
+// Add click event listener to the scroll button
+scrollButton.addEventListener('click', scrollToNextSection);
+
+
 // Function to toggle menu visibility
 function toggleMenu() {
     nav.classList.toggle('show'); // Add or delete the .show class
@@ -46,21 +63,6 @@ scrollToTopButton.addEventListener('click', scrollToTop);
 const scrollButton = document.getElementById('scroll-button');
 const nextSection = document.getElementById('second-section');
 
-// Function to scroll to the next section
-function scrollToNextSection() {
-    if (nextSection) {
-        const sectionPosition = nextSection.getBoundingClientRect().top + window.scrollY;
-        const offset = document.querySelector('.fixed-navbar').offsetHeight; // Высота фиксированного меню
-
-        // Прокручиваем к следующему разделу с поправкой
-        window.scrollTo({
-            top: sectionPosition - offset,
-            behavior: 'smooth'
-        });
-    }
-}
-// Add click event listener to the scroll button
-scrollButton.addEventListener('click', scrollToNextSection);
 
 
 function goToMain() {
