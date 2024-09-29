@@ -1,23 +1,6 @@
 const toggleButton = document.querySelector('.burger-menu');
 const nav = document.querySelector('#nav-list');
 
-// Function to scroll to the next section
-function scrollToNextSection() {
-    if (nextSection) {
-        const sectionPosition = nextSection.getBoundingClientRect().top + window.scrollY;
-        const offset = document.querySelector('.fixed-navbar').offsetHeight; // Fixed menu height
-
-        // Scroll to the next section with the correction
-        window.scrollTo({
-            top: sectionPosition - offset,
-            behavior: 'smooth'
-        });
-    }
-}
-// Add click event listener to the scroll button
-scrollButton.addEventListener('click', scrollToNextSection);
-
-
 // Function to toggle menu visibility
 function toggleMenu() {
     nav.classList.toggle('show'); // Add or delete the .show class
@@ -62,6 +45,32 @@ scrollToTopButton.addEventListener('click', scrollToTop);
 // Scroll to Next Section Logic
 const scrollButton = document.getElementById('scroll-button');
 const nextSection = document.getElementById('second-section');
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const scrollButton = document.querySelector('#scroll-button'); // Ensure the selector matches your scroll button
+    const nextSection = document.querySelector('#next-section'); // The next section to scroll to
+    const navbar = document.querySelector('.fixed-navbar'); // The fixed navigation bar
+
+    // Function to scroll to the next section
+    function scrollToNextSection() {
+        if (nextSection && navbar) {
+            const sectionPosition = nextSection.getBoundingClientRect().top + window.scrollY;
+            const offset = navbar.offsetHeight; // Height of the fixed navigation menu
+
+            // Scroll to the next section with an offset correction
+            window.scrollTo({
+                top: sectionPosition - offset,
+                behavior: 'smooth'
+            });
+        }
+    }
+
+    // Add click event listener to the scroll button
+    if (scrollButton) {
+        scrollButton.addEventListener('click', scrollToNextSection);
+    }
+});
 
 
 
