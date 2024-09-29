@@ -48,7 +48,7 @@ const nextSection = document.getElementById('second-section');
 
 
 document.addEventListener('DOMContentLoaded', () => {
-    const scrollButton = document.querySelector('#scroll-button'); // Ensure the selector matches your scroll button
+    const scrollButton = document.querySelector('#scroll-button'); // Ensure the selector matches a scroll button
     const nextSection = document.querySelector('#next-section'); // The next section to scroll to
     const navbar = document.querySelector('.fixed-navbar'); // The fixed navigation bar
 
@@ -74,19 +74,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+// Function to navigate to the main page 
 function goToMain() {
-    window.location.href = 'index.html';
+    window.location.href = 'index.html'; // Redirects to the index.html page
 }
 
+// Function to navigate to the contacts page
 function goToContacts() {
-    window.location.href = 'contacts.html';
+    window.location.href = 'contacts.html'; // Redirects to the contacts.html page
 }
 
+// Function to navigate to the works page
 function goToWorks() {
-    window.location.href = 'works.html';
+    window.location.href = 'works.html'; // Redirects to the works.html page
 }
 
+// Variable to keep track of the currently active gallery (null means no gallery is active initially)
 var activeGallery = null;
+
 
 // Function to toggle galleries
 function toggleGallery(index) {
