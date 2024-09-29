@@ -46,7 +46,6 @@ scrollToTopButton.addEventListener('click', scrollToTop);
 const scrollButton = document.getElementById('scroll-button');
 const nextSection = document.getElementById('second-section');
 
-
 // Function to scroll to the next section
 function scrollToNextSection() {
     if (nextSection) {
@@ -64,24 +63,19 @@ function scrollToNextSection() {
 scrollButton.addEventListener('click', scrollToNextSection);
 
 
-// Function to navigate to the main page 
 function goToMain() {
-    window.location.href = 'index.html'; // Redirects to the index.html page
+    window.location.href = 'index.html';
 }
 
-// Function to navigate to the contacts page
 function goToContacts() {
-    window.location.href = 'contacts.html'; // Redirects to the contacts.html page
+    window.location.href = 'contacts.html';
 }
 
-// Function to navigate to the works page
 function goToWorks() {
-    window.location.href = 'works.html'; // Redirects to the works.html page
+    window.location.href = 'works.html';
 }
 
-// Variable to keep track of the currently active gallery (null means no gallery is active initially)
 var activeGallery = null;
-
 
 // Function to toggle galleries
 function toggleGallery(index) {
