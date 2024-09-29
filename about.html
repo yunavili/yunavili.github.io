@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Ivanska portfolio</title>
+</head>
+
+<body>
+    <div class="nav-empty"></div>
+    <section class="fixed-navbar">
+        <div class="nav-container">
+            <div class="logo">Yuliia Ivanska</div>
+            <button class="burger-menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 6h18M3 12h18M3 18h18" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </button>
+            <ul id="nav-list">
+                <li onclick="goToabout()" class="nav-page text">About</li>
+                <li onclick="goToworks()" class="nav-page text">Portfolio</li>
+                <li onclick="goTocontacts()" class="nav-page text">Contacts</li>
+            </ul>
+        </div>
+    </section>
+    <section class="content" id="aboutBg">
+        <div class="expanded-container">
+            <div class="container">
+                <h1>Hello World!</h1>
+                <p> I'm Yuliia Ivanska</p>
+                <p>Computer Science Student</p>
+                <p>UI/UX Designer</p>
+                <p>Graphic Designer</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="content">
+            <ul class="footer-list">
+                <li class="footer-list-name footer-li-text"><img src="logo.png" id="footer-logo" alt="logo"><span>Vector
+                        team</span></li>
+                <li><a href="#" class="social-link"><img class="social-img" src="discord.webp"></a><a href="#"
+                        class="social-link"><img class="social-img" src="instagram.webp"></a><a href="#"
+                        class="social-link"><img class="social-img" src="twitter.png"></a></li>
+                <li><a class="footer-li-text" href="#">info@luksiastudycase.com</a></li>
+                <li><a class="footer-li-text" href="#">Pohjoisesplanadi 12</a></li>
+                <li><a class="footer-li-text" href="#">Lohja, 08100</a></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <ul class="footer-list">
+                <li class="footer-list-name footer-li-text">the world</li>
+                <li><a class="footer-li-text" href="#">Locations</a></li>
+                <li><a class="footer-li-text" href="#">All characters</a></li>
+                <li><a class="footer-li-text" href="#">World's history</a></li>
+                <li><a class="footer-li-text" href="#">Mechanisms</a></li>
+            </ul>
+            <ul class="footer-list">
+                <li class="footer-list-name footer-li-text">our team</li>
+                <li><a class="footer-li-text" href="#">Authors</a></li>
+                <li><a class="footer-li-text" href="#">Designers</a></li>
+                <li><a class="footer-li-text" href="#">2D artists</a></li>
+                <li><a class="footer-li-text" href="#">3D artists</a></li>
+                <li><a class="footer-li-text" href="#">Team's history</a></li>
+                <li><a class="footer-li-text" href="#">Vacancies</a></li>
+            </ul>
+
+        </div>
+
+        <div class="addendum">
+            <div class="addendum-inside"><span>
+                    © 2024. All rights reserved.
+                </span></div>
+        </div>
+    </section>
+    <button class="scroll-to-top"><svg width="24px" height="24px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"
+            fill="none">
+            <path stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M10 18V2m0 0l7 7m-7-7L3 9" />
+        </svg></button>
+    <script src="portfolio.js"></script>
+</body>
+
+</html>

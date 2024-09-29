@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Main</title>
+</head>
+
+<body>
+    <div class="nav-empty"></div>
+    <section class="fixed-navbar">
+        <div class="nav-container">
+            <div class="logo" onclick="goToMain()">Yuliia Ivanska</div>
+            <button class="burger-menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 6h18M3 12h18M3 18h18" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </button>
+            <ul id="nav-list">
+                <li onclick="goToMain()" class="nav-page text">About</li>
+                <li onclick="goToWorks()" class="nav-page text">Portfolio</li>
+                <li onclick="goToContacts()" class="nav-page text">Contacts</li>
+            </ul>
+        </div>
+    </section>
+    <div class="intro-screen whitet" id="first-section">
+        <div class="intro-content">
+            <h2>Hello World,</h2>
+            <h1 class="intro-name h1-space">I'm Yuliia Ivanska</h1>
+            <div class="intro-bottom"><span class="intro-item">Computer Science Student</span><span
+                    class="intro-item">UI/UX
+                    Designer</span><span class="intro-item">Graphic
+                    Designer</span>
+            </div>
+        </div>
+        <button class="cta-btn" id="scroll-button">More about me</button>
+    </div>
+    <section class="content cont-first darkt" id="second-section">
+        <h2 class="bottom-space">About</h2>
+        <div class="about-section">
+            <div class="col">
+                <div><img class="avatar"></div>
+                <h3>Profile</h3>
+                <ul>
+                    <li class="info-item">
+                        <strong>Name:</strong>
+                        <p>Yuliia Ivanska</p>
+                    </li>
+                    <li class="info-item">
+                        <strong>Age:</strong>
+                        <p>22</p>
+                    </li>
+                    <li class="info-item">
+                        <strong>Ongoing education:</strong>
+                        <p>Information and Communication Technology (ICT),
+                            Luksia</p>
+                    </li>
+                    <li class="info-item">
+                        <strong>Previous Education:</strong>
+                        <p>Graphic Design,
+                            LNAA</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>Hard skills</h3>
+                <ul class="info-item">
+                    <span class="badge">HTML</span>
+                    <span class="badge">CSS</span>
+                    <span class="badge">UI design</span>
+                    <span class="badge">UX design</span>
+                    <span class="badge">Graphic Design</span>
+                    <span class="badge">Brand Design</span>
+                </ul>
+                <h3>Soft Skills</h3>
+                <ul class="info-item">
+                    <span class="badge">Self-Organization</span>
+                    <span class="badge">Teamwork</span>
+                    <span class="badge">Problem solving</span>
+                    <span class="badge">Feedback Reception</span>
+                    <span class="badge">Continuous Learning</span>
+                    <span class="badge">Creative Thinking</span>
+                </ul>
+                <ul class="info-item">
+                    <li class="info-item">
+                        <strong>Languages:</strong>
+                        <p>English (B1), Finnish (B1)
+                            Russian</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="about-section"><button class="cta-btn" onclick="goToWorks()">My works</button><button
+                class="cta-btn" onclick="goToContacts()">Contact me</button>
+        </div>
+    </section>
+    <section class="content darkt">
+        <h2 class="bottom-space">My Values</h2>
+        <div class="grid-container">
+            <div class="grid-item main">
+                <img class="data-feather" src="icons/check.svg">
+                <h3>Commitment to Quality</h3>
+                <p class="main">I believe in delivering high-quality work that meets both the user&apos;s needs and the
+                    project&rsquor;s requirements</p>
+
+            </div>
+            <div class="grid-item main">
+                <img class="data-feather" src="icons/user.svg">
+                <h3>User-Centric Design</h3>
+                <p class="main">Ensuring that the end-user has a seamless, accessible and enjoyable experience is my
+                    priority</p>
+            </div>
+            <div class="grid-item main">
+                <img class="data-feather" src="icons/arrow-up.svg">
+                <h3>Continuous Improvement</h3>
+                <p class="main">I value learning and evolving in my profession to stay ahead of industry trends and
+                    technologies</p>
+            </div>
+            <div class="grid-item main">
+                <img class="data-feather" src="icons/link.svg">
+                <h3>Collaboration and Teamwork</h3>
+                <p class="main">Strong communication and collaboration with my team and clients is key to successful
+                    projects</p>
+            </div>
+            <div class="grid-item main">
+                <img class="data-feather" src="icons/feather.svg">
+                <h3>Simplicity and Ease</h3>
+                <p class="main">II believe in creating designs that are simple and easy to use, ensuring that users can
+                    navigate and
+                    interact without confusion</p>
+            </div>
+            <div class="grid-item main">
+                <img class="data-feather" src="icons/settings.svg">
+                <h3>Innovation and Creativity</h3>
+                <p class="main">I strive to think outside the box and embrace new ideas, believing that creativity
+                    drives effective
+                    solutions and unique designs</p>
+            </div>
+        </div>
+        <div class="content"></div>
+    </section>
+    <section class="footer">
+        <div class="footer-items">
+            <ul class="footer-list">
+                <li class="footer-list-name footer-li-text"><span>Yuliia
+                        Ivanska</span></li>
+                <li><a href="https://www.linkedin.com/in/yuliia-ivanska-aa0870187/" class="social-link"><img
+                            class="social-img" src="linkedin.svg" alt="LinkedIn"></a><a
+                        href="https://github.com/yunavili" class="social-link"><img class="social-img"
+                            src="github-mark-white.svg" alt="GitHub"></a><a
+                        href="https://www.behance.net/kkozhevnik4ee3" class="social-link"><img class="social-img"
+                            src="behance.svg" alt="Behance"></a><a href="https://dribbble.com/kategluck"
+                        class="social-link"><img class="social-img" src="dribble.svg" alt="Dribbble"></a></li>
+                <li><a class="footer-li-text" href="#">ivanskayulia.yunavili@gmail.com</a></li>
+                <li><a class="footer-li-text" href="#">+358 12345678</a></li>
+                <li><a class="footer-li-text" href="#">Helsinki, Finland</a></li>
+            </ul>
+            <ul class="footer-list">
+                <li class="footer-list-name footer-li-text">Resources</li>
+                <li><a class="footer-li-text" href="#">Design Templates</a></li>
+                <li><a class="footer-li-text" href="#">Development Tools</a></li>
+                <li><a class="footer-li-text" href="#">UI/UX Best Practices</a></li>
+                <li><a class="footer-li-text" href="#">Case Studies</a></li>
+                <li><a class="footer-li-text" href="#">Portfolio Examples</a></li>
+                <li><a class="footer-li-text" href="#">Learning Materials</a></li>
+                <li><a class="footer-li-text" href="resume.pdf" target="_blank">Download Resume</a></li>
+            </ul>
+            <ul class="footer-list">
+                <li class="footer-list-name footer-li-text">Collaborated With</li>
+                <li><a class="footer-li-text">Frostbyte Solutions</a></li>
+                <li><a class="footer-li-text">Horizon Tech</a></li>
+                <li><a class="footer-li-text">Pixelwave Studio</a></li>
+                <li><a class="footer-li-text">Bluefin Software</a></li>
+                <li><a class="footer-li-text">Nebula Dynamics</a></li>
+            </ul>
+        </div>
+        <div class="addendum">
+            <div class="addendum-inside">
+                <p class="whitet">
+                    © 2024. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </section>
+    <button class="scroll-to-top"><svg width="24px" height="24px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"
+            fill="none">
+            <path stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M10 18V2m0 0l7 7m-7-7L3 9" />
+        </svg></button>
+    <script src="node_modules/feather-icons/dist/feather.min.js"></script>
+    <script>
+        feather.replace();
+    </script>
+    <script src="portfolio.js"></script>
+</body>
+
+
+
+</html>

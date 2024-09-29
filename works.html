@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <div class="nav-empty"></div>
+    <section class="fixed-navbar">
+        <div class="nav-container">
+            <div class="logo" onclick="goToMain()">Yuliia Ivanska</div>
+            <button class="burger-menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 6h18M3 12h18M3 18h18" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </button>
+            <ul id="nav-list">
+                <li onclick="goToMain()" class="nav-page text">About</li>
+                <li onclick="goToWorks()" class="nav-page text">Portfolio</li>
+                <li onclick="goToContacts()" class="nav-page text">Contacts</li>
+            </ul>
+        </div>
+    </section>
+    <section class="content cont-first darkt">
+        <h1 class="h1-space">My projects</h1>
+        <div class="gallery-toggles">
+            <div class="card-container" onclick="toggleGallery(0)">
+                <div class="card" id="card-0"></div>
+                <span class="card-name">Graphic Design</span>
+            </div>
+            <div class="card-container" onclick="toggleGallery(1)">
+                <div class="card" id="card-1"></div>
+                <span class="card-name">Programming</span>
+            </div>
+            <div class="card-container" onclick="toggleGallery(2)">
+                <div class="card" id="card-2"></div>
+                <span class="card-name">UI/UX design</span>
+            </div>
+        </div>
+
+        <div id="gallery-0" class="gallery">
+            <h2 class="gallery-header">Projects</h2>
+            <div class="gallery-cards">
+                <div class="card-container">
+                    <div class="card" id="card-01"></div>
+                    <span class="card-name">Similars</span>
+                </div>
+                <div class="card-container">
+                    <div class="card" id="card-02"></div>
+                    <span class="card-name">Packaging</span>
+                </div>
+                <div class="card-container">
+                    <div class="card" id="card-03"></div>
+                    <span class="card-name">Branding</span>
+                </div>
+            </div>
+        </div>
+        <div id="gallery-1" class="gallery">
+            <h2 class="gallery-header">Projects</h2>
+            <div class="gallery-cards">
+                <div class="card-container">
+                    <div class="card" id="card-04"></div>
+                    <span class="card-name">DnD site</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="gallery-2" class="gallery">
+            <h2 class="gallery-header">Projects</h2>
+            <div class="gallery-cards">
+                <div class="card-container">
+                    <div class="card" id="card-05"> </div>
+                    <span class="card-name">Travel app</span>
+                </div>
+                <div class="card-container">
+                    <div class="card" id="card-06">
+                    </div> <span class="card-name">Coffee shop app</span>
+
+                </div>
+                <div class="card-container">
+                    <div class="card" id="card-07">
+                    </div> <span class="card-name">Studio site design</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="footer-items">
+            <ul class="footer-list">
+                <li class="footer-list-name footer-li-text"><span>Yuliia
+                        Ivanska</span></li>
+                <li><a href="https://www.linkedin.com/in/yuliia-ivanska-aa0870187/" class="social-link"><img
+                            class="social-img" src="linkedin.svg" alt="LinkedIn"></a><a
+                        href="https://github.com/yunavili" class="social-link"><img class="social-img"
+                            src="github-mark-white.svg" alt="GitHub"></a><a
+                        href="https://www.behance.net/kkozhevnik4ee3" class="social-link"><img class="social-img"
+                            src="behance.svg" alt="Behance"></a><a href="https://dribbble.com/kategluck"
+                        class="social-link"><img class="social-img" src="dribble.svg" alt="Dribbble"></a></li>
+                <li><a class="footer-li-text" href="#">ivanskayulia.yunavili@gmail.com</a></li>
+                <li><a class="footer-li-text" href="#">+358 12345678</a></li>
+                <li><a class="footer-li-text" href="#">Helsinki, Finland</a></li>
+            </ul>
+            <ul class="footer-list">
+                <li class="footer-list-name footer-li-text">Resources</li>
+                <li><a class="footer-li-text" href="#">Design Templates</a></li>
+                <li><a class="footer-li-text" href="#">Development Tools</a></li>
+                <li><a class="footer-li-text" href="#">UI/UX Best Practices</a></li>
+                <li><a class="footer-li-text" href="#">Case Studies</a></li>
+                <li><a class="footer-li-text" href="#">Portfolio Examples</a></li>
+                <li><a class="footer-li-text" href="#">Learning Materials</a></li>
+                <li><a class="footer-li-text" href="resume.pdf" target="_blank">Download Resume</a></li>
+            </ul>
+            <ul class="footer-list">
+                <li class="footer-list-name footer-li-text">Collaborated With</li>
+                <li><a class="footer-li-text">Frostbyte Solutions</a></li>
+                <li><a class="footer-li-text">Horizon Tech</a></li>
+                <li><a class="footer-li-text">Pixelwave Studio</a></li>
+                <li><a class="footer-li-text">Bluefin Software</a></li>
+                <li><a class="footer-li-text">Nebula Dynamics</a></li>
+            </ul>
+        </div>
+        <div class="addendum">
+            <div class="addendum-inside">
+                <p class="whitet">
+                    © 2024. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </section>
+    <button class="scroll-to-top"><svg width="24px" height="24px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"
+            fill="none">
+            <path stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M10 18V2m0 0l7 7m-7-7L3 9" />
+        </svg></button>
+    <script src="portfolio.js"></script>
+</body>
+
+
+</html>
